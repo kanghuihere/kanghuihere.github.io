@@ -7,6 +7,8 @@
 this.demoCallBack.emit();
 ```
 
+[跳转到更新](demo.html) 
+
 ```html
 <aui-demo (demoCallBack)='demoCallBack()'></aui-demo>
 demoCallBack{}
