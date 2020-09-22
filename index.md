@@ -3,11 +3,13 @@
 ### 使用新需要引入module
 调用其他页面和组件中的函数
 ```
-@Output demoCallBack=new EventEmitter(); //触发位置
+@Output demoCallBack=new EventEmitter(); 
 this.demoCallBack.emit();
+```
+
+```
 <aui-demo (demoCallBack)='demoCallBack()'></aui-demo>
 demoCallBack{}
 ```
-
 ---
 ### 2222222
