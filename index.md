@@ -7,7 +7,7 @@
 this.demoCallBack.emit();
 ```
 
-[跳转到更新](kanghuihere.github.io/demo.html) 
+[跳转到更新](https://kanghuihere.github.io/demo.html) 
 
 ```html
 <aui-demo (demoCallBack)='demoCallBack()'></aui-demo>
