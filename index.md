@@ -1,4 +1,4 @@
-<span style="display: flex; justify-content: center"><span>[前端知识](#前端知识)  [错误总结](#错误总结)  [软件使用](#软件使用)</span></span>  
+<span style="display: flex; justify-content: center"><span>[前端知识](#前端知识) | [错误总结](#错误总结) | [软件使用](#软件使用)</span></span>  
 
 * * *
 # 前端知识
