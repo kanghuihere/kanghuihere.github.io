@@ -1,12 +1,11 @@
----
-layout: false
----
-{% raw %}
-<p>2222</p>
-{% endraw %}
-
+**目录 (Table of Contents)**
+[TOC]
 # 错误汇总
+# Heading 1
 
+[错误汇总](#错误汇总）
+# 错误汇总
+# Heading 1
 ### 使用新需要引入module
 调用其他页面和组件中的函数
 ```javascript
@@ -26,3 +25,4 @@ demo{}
 ```
 ---
 ### 2222222
+
