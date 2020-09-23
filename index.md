@@ -17,8 +17,8 @@ this.demoCallBack.emit();
 [跳转到错误总结](https://kanghuihere.github.io/error.md) 
 
 ```html
-<aui-demo (demoCallBack)='demoCallBack()'></aui-demo>
-demoCallBack{}
+<aui-demo (demoCallBack)='demo()'></aui-demo>
+demo{}
 ```
 
 ```html
