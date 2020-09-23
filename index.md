@@ -4,8 +4,8 @@
 * * *
 ## HTML
 
-## css
-### 隐藏
+## CSS
+#### 隐藏
 ```css
 dispaly: none;
 visibility: hidden;
@@ -53,9 +53,7 @@ nativeElement
 > 容易遗漏，一般采用判断语句
 
 #### 函数返回值为布尔类型
-```javascript
-return (demo); //返回表达式
-```
+返回表达式的写法`return (demo)`
 
 
 # 软件使用
