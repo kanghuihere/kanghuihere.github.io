@@ -1,4 +1,6 @@
-<div style="margin: 0 auto; text-align: cente">[前端知识](#前端知识)  错误总结](#错误总结)  [软件使用](#软件使用)</div>  
+< span style="margin: 0 auto; text-align: cente">
+< span style="margin: 0 auto; text-align: cente">
+[前端知识](#前端知识)  错误总结](#错误总结)  [软件使用](#软件使用)< /span>< /span>  
 
 * * *
 # 前端知识
