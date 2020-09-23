@@ -2,9 +2,9 @@
 ---
 layout: default
 ---
-*  [目录 1](#目录-1)
-  *  [目录 2](#目录-2)
-    *  [目录 3](#目录-3)
+* [目录 1](#目录-1)
+* [目录 2](#目录-2)
+* [目录 3](#目录-3)
 ...此处省略1000字...
 
 
@@ -17,9 +17,6 @@ There should be whitespace between paragraphs.
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
 
-## 目录1
-### 目录2
-#### 目录3
 # Header 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
@@ -47,6 +44,9 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
+## 目录1
+### 目录2
+#### 目录3
 #### Header 4
 
 *   This is an unordered list following a header.
