@@ -7,7 +7,7 @@
 this.demoCallBack.emit();
 ```
 
-[跳转到更新](https://kanghuihere.github.io/demo.html) 
+[跳转到错误总结](https://kanghuihere.github.io/error.md) 
 
 ```html
 <aui-demo (demoCallBack)='demoCallBack()'></aui-demo>
