@@ -1,7 +1,7 @@
 **目录 (Table of Contents)**
 [TOC]
 # 错误汇总
-# Heading 1
+# Heading 1 link [Heading link](https://kanghuihere.github.io/"Heading link")
 
 [错误汇总](#错误汇总）
 # 错误汇总
