@@ -3,8 +3,10 @@
 # 前端知识
 * * *
 ## HTML
+* * *
 
 ## CSS
+* * *
 #### 隐藏
 ```css
 dispaly: none;
@@ -12,25 +14,24 @@ visibility: hidden;
 ```
 
 ## JavaScript
+* * *
 #### canvas图片格式转jpg
 ```javascript
 canvas = doucument.querySelector('canvas');
 url = canvas.toDataURL();
 ```
-* * *
+
 #### 下载图片
 ```javascript
 <a href="url" download></a>
 ```
-* * *
+
 #### includes
 查找一个数组中是否包含某个元素
 
 
 ## Angular
-
-
-
+* * *
 #### 从其他页面或组件调用函数
 ```javascript
 @Output demoCallBack=new EventEmitter(); 
@@ -40,12 +41,14 @@ this.demoCallBack.emit();
 <aui-demo (demoCallBack)='demo()'></aui-demo>
 demo{}
 ```
-* * *
+
 elementRef
 nativeElement
 
 ## 其他
+* * *
 #### _result使用
+
 
 # 错误总结
 * * *
