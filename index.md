@@ -7,7 +7,7 @@
 
 ## CSS
 * * *
-#### 隐藏
+> #### 隐藏
 ```css
 dispaly: none;
 visibility: hidden;
@@ -43,7 +43,7 @@ map(res,item => {
 > 将数组组合成字符串
 
 #### 新建对象
-```javascript
+```js
 Array.from({ length: 7 }).map(e => {
 return { name: 0, id: '' };
 })
