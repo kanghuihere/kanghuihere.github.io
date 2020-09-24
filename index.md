@@ -13,7 +13,7 @@ dispaly: none;
 visibility: hidden;
 ```
 
-#### :host :ng-deep
+> #### :host :ng-deep
 > 对组件中没有暴露的元素设置样式
 
 ## JavaScript
