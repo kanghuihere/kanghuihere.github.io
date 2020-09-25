@@ -18,38 +18,38 @@ visibility: hidden;
 
 ## JavaScript
 * * *
-#### canvas图片格式转jpg
+> #### canvas图片格式转jpg
 ```javascript
 canvas = doucument.querySelector('canvas');
 url = canvas.toDataURL();
 ```
 
-#### 下载图片
+> #### 下载图片
 ```javascript
 <a href="url" download></a>
 ```
 
-#### includes
+> #### includes
 > 查找一个数组中是否包含某个元素
 
-#### map
+> #### map
 ```javascript
 map(res,item => {
  return {label: item.id}
 })
 ```
 
-#### join
+> #### join
 > 将数组组合成字符串
 
-#### 新建对象
+> #### 新建对象
 ```js
 Array.from({ length: 7 }).map(e => {
 return { name: 0, id: '' };
 })
 ```
 
-#### 排序
+> #### 排序
 ```javascript
 sort((a, b) => a.order - b.order)
 ```
@@ -58,7 +58,7 @@ sort((a, b) => a.order - b.order)
 
 ## Angular
 * * *
-#### 从其他页面或组件调用函数
+> #### 从其他页面或组件调用函数
 ```javascript
 @Output demoCallBack=new EventEmitter(); 
 this.demoCallBack.emit();
@@ -68,18 +68,20 @@ this.demoCallBack.emit();
 demo{}
 ```
 
-elementRef
-nativeElement
+> elementRef
+> nativeElement
 
 ## 其他
 * * *
-#### _result使用
-#### jason国际化
+> #### _result使用
+
+> #### jason国际化
 > jason文件中`"demo":"中文"`
-> 1.html中使用插值`{{'demo' | i18n}}`,在标签中引号引用<ng-container *ngSwitchCase='"demo"'>
+> 1.html中使用插值`{{'demo' | i18n}}`,在标签中引号引用`<ng-container *ngSwitchCase='"demo"'>`
 > 2.js中`this.i18n.get("demo")`
 > 3.动态填入内容`"demo":{name}`,js中使用时`this.i18n.get('demo',{name:'动态值'})`
-#### _cloneDeep(value)
+
+> #### _cloneDeep(value)
 > 改变地址，当只想要值，不想要地址时使用
 
 # 错误总结
