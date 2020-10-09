@@ -1,8 +1,8 @@
-<span style="display: flex; justify-content: center"><span>[HTML](#html) | [CSS](#CSS) | [javascript](#javascript) | [Angular](#Angular) | [错误总结](#错误总结) | [软件使用](#软件使用) | [其他](#其他)</span></span>  
+<span style="display: flex; justify-content: center"><span>[html](#html) | [css](#css) | [javascript](#javascript) | [angular](#angular) | [错误总结](#错误总结) | [软件使用](#软件使用) | [其他](#其他)</span></span>  
 
 # html
 * * *
-# CSS
+# css
 * * *
 #### 隐藏
 ```css
