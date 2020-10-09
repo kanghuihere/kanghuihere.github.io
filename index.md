@@ -1,22 +1,18 @@
-<span style="display: flex; justify-content: center"><span>[前端知识](#前端知识) | [错误总结](#错误总结) | [软件使用](#软件使用)</span></span>  
+<span style="display: flex; justify-content: center"><span>[HTML](#HTML) | [CSS](#CSS) | [JavaScript](#JavaScript) | [Angular](#Angular) | [错误总结](#错误总结) | [软件使用](#软件使用) | [其他](#其他)</span></span>  
 
-# 前端知识
+# HTML
 * * *
-## HTML
-* * *
-## CSS
+# CSS
 * * *
 #### 隐藏
 ```css
 dispaly: none;
 visibility: hidden;
 ```
-
-
 #### :host :ng-deep
 对组件中没有暴露的元素设置样式
 
-## JavaScript
+# JavaScript
 * * *
 #### canvas图片格式转jpg
 ```javascript
@@ -54,9 +50,7 @@ return { name: 0, id: '' };
 sort((a, b) => a.order - b.order)
 ```
 
-
-
-## Angular
+# Angular
 * * *
 #### 从其他页面或组件调用函数
 ```javascript
@@ -70,21 +64,6 @@ demo{}
 
 elementRef
 nativeElement
-
-## 其他
-* * *
-#### jason国际化
-jason文件中`"demo":"中文"`;
-1.html中使用插值`{{'demo' | i18n}}`,在标签中引号引用`<ng-container *ngSwitchCase='"demo"'>`;
-2.js中`this.i18n.get("demo")`;
-3.动态填入内容`"demo":{name}`,js中使用时`this.i18n.get('demo',{name:'动态值'})`;
-
-#### 解构赋值
-`a=b`，即将b的值给了a，当a改变时b也会改变；
-将`a={...b}`,a改变时b不会变化，这样就有两个空间了
-
-#### _cloneDeep(value)
-改变地址，当只想要值，不想要地址时使用
 
 # 错误总结
 * * *
@@ -131,5 +110,18 @@ host配置`C:\Windows\System32\drivers\etc`
 组件更新`npm i @iux/live@latest`latest也可以是版本号
 html,ts(`demo()`,`@ViewChild`,`@Output`,`@Input`),module
 
+# 其他
+* * *
+#### jason国际化
+jason文件中`"demo":"中文"`;
+1.html中使用插值`{{'demo' | i18n}}`,在标签中引号引用`<ng-container *ngSwitchCase='"demo"'>`;
+2.js中`this.i18n.get("demo")`;
+3.动态填入内容`"demo":{name}`,js中使用时`this.i18n.get('demo',{name:'动态值'})`;
 
+#### 解构赋值
+`a=b`，即将b的值给了a，当a改变时b也会改变；
+将`a={...b}`,a改变时b不会变化，这样就有两个空间了
+
+#### _cloneDeep(value)
+改变地址，当只想要值，不想要地址时使用
 
