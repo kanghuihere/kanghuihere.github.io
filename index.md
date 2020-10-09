@@ -100,11 +100,11 @@ npm start - package或proxy变化;
 5开头 - 服务器问题
 
 #### 启动环境
-code或isource中配置SSH
-git中输入`git clone` + 工程的ssh链接
-host配置`C:\Windows\System32\drivers\etc`
-新建分支 `git checkout -b feat/kanghui`
-拉代码`git pull origin master`
+code或isource中配置SSH  
+git中输入`git clone` + 工程的ssh链接  
+host配置`C:\Windows\System32\drivers\etc`  
+新建分支 `git checkout -b feat/kanghui`  
+拉代码`git pull origin master`  
 
 #### 组件使用
 组件更新`npm i @iux/live@latest`latest也可以是版本号
