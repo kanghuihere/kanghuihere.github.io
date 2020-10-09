@@ -68,7 +68,7 @@ nativeElement
 # 错误总结
 * * *
 #### 命名
-类名: aui-demo;
+类名: aui-demo;  
 变量: auiDemo;
 
 #### 空值处理
@@ -81,8 +81,8 @@ nativeElement
 在下拉选择、数中的最小节点中设置
 
 #### 对象可能为 "null"情况处理
-对象后加！，编译不报错，但是为空还是会报错;
-对象后加？，为空也不会报错（3.7版本以上）
+对象后加！，编译不报错，但是为空还是会报错;  
+对象后加？，为空也不会报错（3.7版本以上）  
 
 #### a标签有click事件时需要加`href="javascript:void(0)"`
 `void(demo)`输入任何值都返回undefined
@@ -90,14 +90,14 @@ nativeElement
 # 软件使用
 * * *
 #### npm命令
-npm install - package.jason中的包变化;
-npm run gen - swagger文件变化;
-npm start - package或proxy变化;
+npm install - package.jason中的包变化;  
+npm run gen - swagger文件变化;  
+npm start - package或proxy变化;  
 
 #### http错误类型
-2开头 - 成功
-4开头 - 客户端问题
-5开头 - 服务器问题
+2开头 - 成功  
+4开头 - 客户端问题  
+5开头 - 服务器问题  
 
 #### 启动环境
 code或isource中配置SSH  
@@ -107,20 +107,20 @@ host配置`C:\Windows\System32\drivers\etc`
 拉代码`git pull origin master`  
 
 #### 组件使用
-组件更新`npm i @iux/live@latest`latest也可以是版本号
-html,ts(`demo()`,`@ViewChild`,`@Output`,`@Input`),module
+组件更新`npm i @iux/live@latest`latest也可以是版本号  
+html,ts(`demo()`,`@ViewChild`,`@Output`,`@Input`),module  
 
 # 其他
 * * *
 #### jason国际化
-jason文件中`"demo":"中文"`;
-1.html中使用插值`{{'demo' | i18n}}`,在标签中引号引用`<ng-container *ngSwitchCase='"demo"'>`;
-2.js中`this.i18n.get("demo")`;
-3.动态填入内容`"demo":{name}`,js中使用时`this.i18n.get('demo',{name:'动态值'})`;
+jason文件中`"demo":"中文"`;  
+1.html中使用插值`{{'demo' | i18n}}`,在标签中引号引用`<ng-container *ngSwitchCase='"demo"'>`;  
+2.js中`this.i18n.get("demo")`;  
+3.动态填入内容`"demo":{name}`,js中使用时`this.i18n.get('demo',{name:'动态值'})`;  
 
 #### 解构赋值
-`a=b`，即将b的值给了a，当a改变时b也会改变；
-将`a={...b}`,a改变时b不会变化，这样就有两个空间了
+`a=b`，即将b的值给了a，当a改变时b也会改变；   
+将`a={...b}`,a改变时b不会变化，这样就有两个空间了  
 
 #### _cloneDeep(value)
 改变地址，当只想要值，不想要地址时使用
