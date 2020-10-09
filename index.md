@@ -1,6 +1,6 @@
-<span style="display: flex; justify-content: center"><span>[HTML](#HTML) | [CSS](#CSS) | [JavaScript](#基础) | [Angular](#Angular) | [错误总结](#错误总结) | [软件使用](#软件使用) | [其他](#其他)</span></span>  
+<span style="display: flex; justify-content: center"><span>[HTML](#html) | [CSS](#CSS) | [javascript](#javascript) | [Angular](#Angular) | [错误总结](#错误总结) | [软件使用](#软件使用) | [其他](#其他)</span></span>  
 
-# HTML
+# html
 * * *
 # CSS
 * * *
@@ -12,7 +12,7 @@ visibility: hidden;
 #### :host :ng-deep
 对组件中没有暴露的元素设置样式
 
-# 基础
+# javascript
 * * *
 #### canvas图片格式转jpg
 ```javascript
