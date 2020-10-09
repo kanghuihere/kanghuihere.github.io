@@ -1,7 +1,10 @@
-<span style="display: flex; justify-content: center"><span>[html](#html) | [css](#css) | [javascript](#javascript) | [angular](#angular) | [错误总结](#错误总结) | [软件使用](#软件使用) | [其他](#其他)</span></span>  
+<span style="display: flex; justify-content: center"><span>[html](#html) | [css](#css) | [javascript](#javascript) | [angular](#angular) | [错误总结](#错误总结) | [live组件](#live组件) | [软件使用](#软件使用) | [其他](#其他)</span></span>  
 
 # html
-* * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+
 # css
 * * *
 #### 隐藏
@@ -11,6 +14,8 @@ visibility: hidden;
 ```
 #### :host :ng-deep
 对组件中没有暴露的元素设置样式
+
+
 
 # javascript
 * * *
@@ -50,6 +55,13 @@ return { name: 0, id: '' };
 sort((a, b) => a.order - b.order)
 ```
 
+#### 解构赋值
+`a=b`，即将b的值给了a，当a改变时b也会改变；   
+将`a={...b}`,a改变时b不会变化，这样就有两个空间了  
+
+#### _cloneDeep(value)
+改变地址，当只想要值，不想要地址时使用
+
 # Angular
 * * *
 #### 从其他页面或组件调用函数
@@ -62,9 +74,16 @@ this.demoCallBack.emit();
 demo{}
 ```
 
+#### ng区别
+ng-container
+ng-template
+ng-content
+
 elementRef
 nativeElement
 
+# live组件
+* * *
 # 错误总结
 * * *
 #### 命名
@@ -89,16 +108,6 @@ nativeElement
 
 # 软件使用
 * * *
-#### npm命令
-npm install - package.jason中的包变化;  
-npm run gen - swagger文件变化;  
-npm start - package或proxy变化;  
-
-#### http错误类型
-2开头 - 成功  
-4开头 - 客户端问题  
-5开头 - 服务器问题  
-
 #### 启动环境
 code或isource中配置SSH  
 git中输入`git clone` + 工程的ssh链接  
@@ -106,9 +115,28 @@ host配置`C:\Windows\System32\drivers\etc`
 新建分支 `git checkout -b feat/kanghui`  
 拉代码`git pull origin master`  
 
-#### 组件使用
+#### npm命令
+npm install - package.jason中的包变化;  
+npm run gen - swagger文件变化;  
+npm start - package或proxy变化;  
+
+#### 组件更新
 组件更新`npm i @iux/live@latest`latest也可以是版本号  
 html,ts(`demo()`,`@ViewChild`,`@Output`,`@Input`),module  
+
+#### cmd常用命令
+IP查询 - `ipconfig`
+
+#### vscode常用
+Ctrl+P - 搜索文件
+Ctrl+f - 搜索代码
+
+#### Chrome常用
+
+#### http错误类型
+2开头 - 成功  
+4开头 - 客户端问题  
+5开头 - 服务器问题  
 
 # 其他
 * * *
@@ -117,11 +145,3 @@ jason文件中`"demo":"中文"`;
 1.html中使用插值`{{'demo' | i18n}}`,在标签中引号引用`<ng-container *ngSwitchCase='"demo"'>`;  
 2.js中`this.i18n.get("demo")`;  
 3.动态填入内容`"demo":{name}`,js中使用时`this.i18n.get('demo',{name:'动态值'})`;  
-
-#### 解构赋值
-`a=b`，即将b的值给了a，当a改变时b也会改变；   
-将`a={...b}`,a改变时b不会变化，这样就有两个空间了  
-
-#### _cloneDeep(value)
-改变地址，当只想要值，不想要地址时使用
-
