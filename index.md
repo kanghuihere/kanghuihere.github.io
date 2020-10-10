@@ -31,10 +31,12 @@ url = canvas.toDataURL();
 #### includes
 查找一个数组中是否包含某个元素
 #### map
+抽象，将f(x)作用在数组的每一个元素上，并把结果生成一个新的数组
 ```javascript
 map(res,item => {
  return {label: item.id}
 })
+result = arr.map(fx)
 ```
 #### join
 将数组组合成字符串
@@ -53,6 +55,23 @@ sort((a, b) => a.order - b.order)
 将`a={...b}`,a改变时b不会变化，这样就有两个空间了  
 #### _cloneDeep(value)
 改变地址，当只想要值，不想要地址时使用
+#### this
+#### reduce
+结果与数组下一个进行累积计算
+```js
+[x1, x2, x3, x4].reduce(f) = f(f(f(x1, x2), x3), x4)
+var arr = [1, 3, 5, 7, 9];
+arr.reduce(function (x, y) {
+    return x + y;
+});
+```
+#### filter
+将传入的函数作用于数组的每个元素，根据返回值false或true来决定是否保留
+```js
+var r = arr.filter(function (x) {
+    return x % 2 !== 0;
+});
+```
 
 
 
@@ -68,12 +87,13 @@ this.demoCallBack.emit();
 demo{}
 ```
 #### ng区别
-ng-container
-ng-template
-ng-content
-
-elementRef
-nativeElement
+ng-container - 不存在，仅作为容器使用（两个结构型指令*ngIf,*ngFor,*ngSwitch等是不可以应用在同一个元素上的）   
+ng-template - 模板
+```html
+<ng-template #loadingTemp>定义模板</ng-template>
+<div *ngIf="!loading else loadingTemp">使用模板</div>
+```
+ng-content - 公共组件
 
 
 
