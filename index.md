@@ -14,8 +14,24 @@ visibility: hidden;
 ```
 #### :host :ng-deep
 对组件中没有暴露的元素设置样式
-
-
+#### html引入css三种方式
+```css
+<div style="color:red;font-size:10px;">行内式</div>
+内部样式表
+<head>
+ <style type="text/css">
+  div{
+      background: green;
+  }
+ </style>
+</head>
+外部样式表-链接式
+<link type="text/css" rel="styleSheet"  href="CSS文件路径" />
+外部样式表-导入式
+<style type="text/css">
+  @import url("css文件路径");
+</style>
+```
 
 # javascript
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
@@ -92,9 +108,10 @@ console.log(arr.find(function (s) {
 依次传入数组的元素，遍历函数，与map的区别是没有返回值
 
 
-# Angular
+# angular
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-#### 从其他页面或组件调用函数
+#### 从其他页面或组件调用函数子组件 父组件
+
 ```javascript
 @Output demoCallBack=new EventEmitter(); 
 this.demoCallBack.emit();
@@ -111,8 +128,17 @@ ng-template - 模板
 <div *ngIf="!loading else loadingTemp">使用模板</div>
 ```
 ng-content - 公共组件
-
-
+#### 页面刷新,变化检测
+```angular
+ constructor(private cdr: ChangeDetectorRef){}
+```
+```angular
+this.cdr.detectChanges();
+```
+#### 显示row html
+```angular
+<div innerHTML="'demo'|i18n"></div>
+```
 
 # live组件
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
