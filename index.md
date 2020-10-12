@@ -30,14 +30,6 @@ url = canvas.toDataURL();
 ```
 #### includes
 查找一个数组中是否包含某个元素
-#### map
-抽象，将f(x)作用在数组的每一个元素上，并把结果生成一个新的数组
-```javascript
-map(res,item => {
- return {label: item.id}
-})
-result = arr.map(fx)
-```
 #### join
 将数组组合成字符串
 #### 新建对象
@@ -46,16 +38,20 @@ Array.from({ length: 7 }).map(e => {
 return { name: 0, id: '' };
 })
 ```
-#### 排序
-```javascript
-sort((a, b) => a.order - b.order)
-```
 #### 解构赋值
 `a=b`，即将b的值给了a，当a改变时b也会改变；   
 将`a={...b}`,a改变时b不会变化，这样就有两个空间了  
 #### _cloneDeep(value)
 改变地址，当只想要值，不想要地址时使用
 #### this
+#### map
+抽象，将f(x)作用在数组的每一个元素上，并把结果生成一个新的数组
+```javascript
+map(res,item => {
+ return {label: item.id}
+})
+result = arr.map(fx)
+```
 #### reduce
 结果与数组下一个进行累积计算
 ```js
@@ -65,6 +61,10 @@ arr.reduce(function (x, y) {
     return x + y;
 });
 ```
+#### 排序
+```javascript
+arr.sort((a, b) => a.key - b.key)
+```
 #### filter
 将传入的函数作用于数组的每个元素，根据返回值false或true来决定是否保留
 ```js
@@ -72,7 +72,24 @@ var r = arr.filter(function (x) {
     return x % 2 !== 0;
 });
 ```
-
+#### every
+判断数组的所有元素是否满足条件，全部满足返回true，有不满足的返回false
+```js
+arr.every(function (s) {
+    return s.length > 0;
+})
+```
+#### find&findIndex
+find查找数组中符合条件的元素，返回第一个符合的元素，没有则返回undefined
+findIndex返回元素索引，没有返回-1
+```js
+var arr = ['Apple', 'pear', 'orange'];
+console.log(arr.find(function (s) {
+    return s.toLowerCase() === s;
+})); // 'pear', 因为pear全部是小写
+```
+#### forEach
+依次传入数组的元素，遍历函数，与map的区别是没有返回值
 
 
 # Angular
