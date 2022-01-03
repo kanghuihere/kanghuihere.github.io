@@ -7,13 +7,13 @@
 
 # css
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-#### 隐藏
+#### 隐藏222
 ```css
 dispaly: none;
 visibility: hidden;
 ```
 #### :host :ng-deep
-对组件中没有暴露的元素设置样式
+对组件中没有暴露的元素设置样式kkkk
 #### html引入css三种方式
 ```css
 <div style="color:red;font-size:10px;">行内式</div>
